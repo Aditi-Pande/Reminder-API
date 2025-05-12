@@ -20,22 +20,25 @@ This is a simple REST API built with Flask that allows users to schedule reminde
 POST /api/reminders
 
 Request JSON Body:
-{
-"date": "2025-05-20",
-"time": "14:30:00",
-"message": "Doctor appointment",
-"reminder_type": "Email"
-}
+    
+    {
+    "date": "2025-05-20",
+    "time": "14:30:00",
+    "message": "Doctor appointment",
+    "reminder_type": "Email"
+    }
 
 Success Response:
-201 Created
-{
-"id": 1,
-"date": "2025-05-20",
-"time": "14:30:00",
-"message": "Doctor appointment",
-"reminder_type": "Email"
-}
+        
+    201 Created
+        {
+        "id": 1,
+        "date": "2025-05-20",
+        "time": "14:30:00",
+        "message": "Doctor appointment",
+        "reminder_type": "Email"
+        }
+        
 
     400 Bad Request
         {
